@@ -12,7 +12,6 @@ public class Autorennen {
         List<String> autoNamen = new ArrayList<>();
         List<List<Double>> rundenZeiten = new ArrayList<>();
 
-        // Eingabe der Auto-Namen und Rundenzeiten
         while (true) {
             System.out.println("Geben Sie den Namen des Autos ein (oder 'fertig' zum Beenden):");
             String autoName = scanner.nextLine();
@@ -30,7 +29,6 @@ public class Autorennen {
             rundenZeiten.add(zeiten);
         }
 
-        // Berechnung der Gesamtzeit und Durchschnittszeit
         for (int i = 0; i < autoNamen.size(); i++) {
             double gesamtzeit = 0;
             for (int j = 1; j < rundenZeiten.get(i).size(); j++) {
